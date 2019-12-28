@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (C) 2018 The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~      http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.codelabs.paging"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="15"
+23-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="28" />
+24-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:20:5-66
+26-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:20:22-64
+27
+28    <application
+28-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:21:5-35:19
+29        android:allowBackup="true"
+29-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:22:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/397f55e652ab2d8b6ad269620ac1e6a0/core-1.1.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:23:9-43
+33        android:label="@string/app_name"
+33-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:24:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:25:9-54
+35        android:supportsRtl="true"
+35-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:26:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme" >
+37-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:27:9-40
+38        <activity android:name="com.example.android.codelabs.paging.ui.SearchRepositoriesActivity" >
+38-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:28:9-34:20
+38-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:29:13-93
+39            <intent-filter>
+39-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:30:13-33:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:31:17-68
+40-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:31:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:32:17-76
+42-->/Users/gideon/Documents/android-paging/app/src/main/AndroidManifest.xml:32:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <provider
+46-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/f34ea17ab5d08ac0a3205342046518d4/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/f34ea17ab5d08ac0a3205342046518d4/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+48            android:authorities="com.example.android.codelabs.paging.lifecycle-process"
+48-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/f34ea17ab5d08ac0a3205342046518d4/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+49            android:exported="false"
+49-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/f34ea17ab5d08ac0a3205342046518d4/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+50            android:multiprocess="true" />
+50-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/gideon/.gradle/caches/transforms-2/files-2.1/f34ea17ab5d08ac0a3205342046518d4/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+51
+52        <service
+52-->[androidx.room:room-runtime:2.2.3] /Users/gideon/.gradle/caches/transforms-2/files-2.1/66f96b36dc75ad96aaf4f5101394d87e/room-runtime-2.2.3/AndroidManifest.xml:25:9-27:40
+53            android:name="androidx.room.MultiInstanceInvalidationService"
+53-->[androidx.room:room-runtime:2.2.3] /Users/gideon/.gradle/caches/transforms-2/files-2.1/66f96b36dc75ad96aaf4f5101394d87e/room-runtime-2.2.3/AndroidManifest.xml:26:13-74
+54            android:exported="false" />
+54-->[androidx.room:room-runtime:2.2.3] /Users/gideon/.gradle/caches/transforms-2/files-2.1/66f96b36dc75ad96aaf4f5101394d87e/room-runtime-2.2.3/AndroidManifest.xml:27:13-37
+55    </application>
+56
+57</manifest>
